@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Empanadas Doña Rosa | Pedí online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>🥟 Empanadas Doña Rosa</h1>
+  <p>Armá tu pedido y llega ordenado a nuestro WhatsApp</p>
+</header>
+<main>
+  <h2>Elegí tus empanadas</h2>
+  <p id="aviso" class="aviso"></p>
+  <section id="empanadas"></section>
+
+  <h2>Bebidas</h2>
+  <section id="bebidas"></section>
+
+  <h2>Tus datos</h2>
+  <input id="nombre" placeholder="Nombre">
+  <input id="telefono" type="tel" placeholder="Tu teléfono">
+  <div class="opciones">
+    <label><input type="radio" name="entrega" value="Envío" checked> Envío a domicilio</label>
+    <label><input type="radio" name="entrega" value="Retiro"> Retiro en el local</label>
+  </div>
+  <input id="direccion" placeholder="Dirección de entrega">
+  <select id="pago">
+    <option>Efectivo</option>
+    <option>Transferencia</option>
+    <option>Mercado Pago</option>
+  </select>
+  <textarea id="notas" placeholder="Notas (ej: sin cebolla, tocar timbre 2B)"></textarea>
+
+  <h2>Tu pedido</h2>
+  <ul id="resumen"></ul>
+  <div id="totales"></div>
+
+  <button id="enviar">Enviar pedido por WhatsApp</button>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
